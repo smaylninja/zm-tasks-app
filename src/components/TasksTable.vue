@@ -31,6 +31,9 @@ const emit = defineEmits(["deleteTask"]);
         </div>
       </div>
     </template>
+    <span class="empty-message" v-if="!tasks.length">
+      Привет! На сегодня задач нет 😊
+    </span>
   </div>
 </template>
 
@@ -81,5 +84,8 @@ const emit = defineEmits(["deleteTask"]);
       color: var(--text-bug-pale);
     }
   }
+}
+.empty-message {
+  text-align: center;
 }
 </style>
