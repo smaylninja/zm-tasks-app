@@ -21,6 +21,15 @@ const router = createRouter({
       path: "/edit/:id",
       name: "task-edit",
       component: TaskEditView,
+      beforeEnter: (to) => {
+        const taskStore = useTaskStore();
+
+        if (taskStore.getTaskById(+to.params.id)) {
+          return true;
+        } else {
+          router.push("/");
+        }
+      },
     },
   ],
 });
