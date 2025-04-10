@@ -38,7 +38,6 @@ const model = defineModel<string>({ default: "" });
 
   & > .input-name {
     font-size: 14px;
-    color: var(--text-primary);
     font-weight: 500;
     padding-bottom: 8px;
   }

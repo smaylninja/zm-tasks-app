@@ -49,7 +49,6 @@ const emit = defineEmits(["deleteTask"]);
     justify-content: space-between;
     align-items: start;
     min-width: clamp(0px, 50vw, 356px);
-    color: var(--text-primary);
 
     & > .task-name {
       display: flex;

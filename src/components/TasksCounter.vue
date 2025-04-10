@@ -17,6 +17,5 @@ const { tasksCount = 0, bugsCount = 0 } = defineProps<{
   font-size: 14px;
   line-height: 130%;
   letter-spacing: -1%;
-  color: var(--text-primary);
 }
 </style>

@@ -25,7 +25,6 @@ const model = defineModel<boolean>({ default: false });
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-primary);
 
   & > .checkbox-input {
     appearance: none;
