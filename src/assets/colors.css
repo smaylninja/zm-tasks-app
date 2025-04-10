@@ -1,0 +1,21 @@
+:root {
+  --accent: #21a2f5;
+  --accent-hover: #1b88cd;
+
+  --secondary: #f3f5fb;
+  --secondary-hover: #cfd5e4;
+
+  --text-primary: #494d60;
+  --text-primary-pale: #d2d2d2;
+  --text-tertiary: #9299b8;
+  --text-white: #ffffff;
+  --text-bug: #df2424;
+  --text-bug-pale: #ffb6b6;
+
+  --logo-title: #bababa;
+
+  --border-normal: #e3e6ef;
+  --border-muted: #adb4d2;
+
+  --icon: #adb4d2;
+}
