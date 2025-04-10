@@ -12,6 +12,7 @@ const router = createRouter({
       name: "home",
       component: HomeView,
       meta: {
+        title: "Главная страница | ZM Задачник",
         transition: "slide-right",
       },
     },
@@ -20,6 +21,7 @@ const router = createRouter({
       name: "task-create",
       component: TaskCreateView,
       meta: {
+        title: "Создать задачу | ZM Задачник",
         transition: "slide-left",
       },
     },
@@ -28,6 +30,7 @@ const router = createRouter({
       name: "task-edit",
       component: TaskEditView,
       meta: {
+        title: "Редактировать задачу | ZM Задачник",
         transition: "slide-left",
       },
       beforeEnter: (to) => {
@@ -41,6 +44,11 @@ const router = createRouter({
       },
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || "ZM Задачник";
+  next();
 });
 
 export default router;
