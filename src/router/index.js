@@ -11,16 +11,25 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      meta: {
+        transition: "slide-right",
+      },
     },
     {
       path: "/create",
       name: "task-create",
       component: TaskCreateView,
+      meta: {
+        transition: "slide-left",
+      },
     },
     {
       path: "/edit/:id",
       name: "task-edit",
       component: TaskEditView,
+      meta: {
+        transition: "slide-left",
+      },
       beforeEnter: (to) => {
         const taskStore = useTaskStore();
 
