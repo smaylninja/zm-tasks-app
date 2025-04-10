@@ -48,11 +48,14 @@ const emit = defineEmits(["deleteTask"]);
     display: flex;
     justify-content: space-between;
     align-items: start;
-    min-width: 356px;
+    min-width: clamp(0px, 50vw, 356px);
     color: var(--text-primary);
 
     & > .task-name {
       display: flex;
+      > p {
+        overflow-wrap: anywhere;
+      }
     }
 
     & > .task-name > .task-id {
@@ -68,7 +71,8 @@ const emit = defineEmits(["deleteTask"]);
     & > .buttons {
       display: flex;
       gap: 4px;
-      margin-left: 4px;
+      margin-left: 8px;
+      min-width: 44px;
 
       & > .button {
         &:hover {
